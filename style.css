@@ -1,59 +1,66 @@
-*{
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(205, 226, 195);
-    height: 60px;
-    padding: 0 22px;
+body {
+  background: #edf2f7;
 }
 
-.logo-name a{
-    color: rgb(20, 85, 4);
-    text-decoration: none;
-    font-size: 27px;
-    margin-left: 12px
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(205, 226, 195);
+  height: 60px;
+  padding: 0 22px;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1200px;
+  border-radius: 0 0 10px 10px;
 }
 
-.logo-name a:hover{
-    color: rgba(20, 100, 0, 0.7);
+.logo-name a {
+  color: rgb(20, 85, 4);
+  text-decoration: none;
+  font-size: 27px;
+  margin-left: 12px;
 }
 
-
-.navbar{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+.logo-name a:hover {
+  color: rgba(20, 100, 0, 0.7);
 }
 
-.navbar h3 a{
-    font-size: 18px;
-    margin-left: 30px;
-    color: rgb(20, 100, 0);
-    text-decoration: none;
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.navbar a:hover{
-    color: rgb(20, 100, 0, 0.7)
+.navbar h3 a {
+  font-size: 18px;
+  margin-left: 30px;
+  color: rgb(20, 100, 0);
+  text-decoration: none;
 }
 
-.navbar img{
-    width: 50px;
-    height: 50px;
-    display: inline-block;
-    background-position: center;
-    background-size: cover;
-    border-radius: 50%;
-    margin-left: 40px;
+.navbar a:hover {
+  color: rgb(20, 100, 0, 0.7);
 }
 
-.hamburger-menu{
-    display: none;
+.navbar img {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  margin-left: 40px;
+}
+
+.hamburger-menu {
+  display: none;
 }
 
 /* .navbar::after{
@@ -68,102 +75,106 @@
     background-position: center;
 } */
 
-.content{
-    display: flex;
+.content {
+  display: flex;
+  gap: 20px;
+  width: 80%;
+  max-width: 1200px;
+  margin: 40px auto;
 }
 
-.content h3{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 35px;
-
+.content h3 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 35px;
 }
 
-body{
-    background: #edf2f7;
+aside,
+main {
+  padding: 1rem;
+  background-color: #ffffff;
+  min-height: 400px;
+  text-align: justify;
+  line-height: 30px;
+  box-shadow: 0 8px 15px 0 rgb(120, 150, 112);
+  border-radius: 10px;
 }
 
-
-aside, main{
-    padding: 1rem;
-    background-color: #ffffff;
-    height: 400px;
-    margin: 35px;
-    text-align: justify;
-    line-height: 30px;
-    box-shadow: 0 8px 15px 0 rgb(120, 150, 112);
-    border-radius: 10px;
+aside {
+  flex: 1;
 }
- 
-aside{
-    flex: 1;
-}
-main{
-    flex: 3;
+main {
+  flex: 3;
 }
 
-
-.cards{
-    display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(225px,1fr));
-    column-gap: 10px;
-    margin: 30px;
-    
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+  width: 80%;
+  max-width: 1200px;
+  gap: 20px;
+  margin: 0 auto 40px auto;
 }
 
-.card{
-    margin: 10px;
-    background-color: #ffffff;
-    background-size: cover;
-    background-position: center;
-    box-shadow: 0 8px 10px 0 rgb(120, 150, 112);
-    border-radius: 10px;
-    overflow: hidden;
+.card {
+  background-color: #ffffff;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 8px 10px 0 rgb(120, 150, 112);
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-
-.card img{
-    width: 100%;
-    height: 200px;
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
 }
 
-.card p{
-    padding: 20px;
-    line-height: 1.5;
-    text-align: justify; 
-    color: black;
+.card p {
+  padding: 20px;
+  line-height: 1.5;
+  text-align: justify;
+  color: black;
 }
 
-.card a{
-    text-decoration: none;
+.card a {
+  text-decoration: none;
 }
 
-.contact a{
-    color: rgb(20, 100, 0);
-    margin: 50px;
-    text-decoration: none;
-}
-.contact a:hover{
-    text-decoration: underline;
-    color: rgb(20, 100, 0, 0.7);
+.contact {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0 40px 0;
 }
 
-
-
-
-@media(max-width:768px){
-    .hamburger-menu{
-        display: block;
-        font-size: 2rem;
-    }
-    .navbar{
-        display: none;
-    }
-    .content{
-        width: calc(100%-2rem);
-        flex-direction: column-reverse;
-        margin: 1rem;
-    }
+.contact a {
+  color: rgb(20, 100, 0);
+  text-decoration: none;
 }
-    
+.contact a:hover {
+  text-decoration: underline;
+  color: rgb(20, 100, 0, 0.7);
+}
 
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: block;
+    font-size: 2rem;
+  }
+  .navbar {
+    display: none;
+  }
+
+  .header,
+  .content,
+  .cards,
+  .contact {
+    width: 90%;
+  }
+
+  .content {
+    flex-direction: column-reverse;
+  }
+}
